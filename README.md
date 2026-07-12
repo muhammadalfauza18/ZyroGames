@@ -1,8 +1,6 @@
 # 🎮 ZyroGames
 
-<p align="center">
-  <img src="assets/images/logo.png" alt="Logo ZyroGames" width="180">
-</p>
+
 
 <p align="center">
   Website toko game modern dengan tampilan responsif yang dibangun menggunakan HTML, CSS, dan JavaScript.
@@ -84,31 +82,6 @@ atau jalankan menggunakan **Live Server** pada Visual Studio Code.
 
 ---
 
-# 📸 Tampilan Website
-
-Silakan tambahkan beberapa screenshot website pada folder berikut.
-
-```text
-screenshots/
-│
-├── beranda.png
-├── daftar-game.png
-├── kategori.png
-└── footer.png
-```
-
-Kemudian tampilkan pada README seperti berikut.
-
-```markdown
-## Halaman Beranda
-
-![Beranda](screenshots/beranda.png)
-
-## Daftar Game
-
-![Game](screenshots/daftar-game.png)
-```
-
 ---
 
 # 🎯 Pengembangan Selanjutnya
@@ -142,17 +115,6 @@ Proyek ini dibuat untuk meningkatkan pemahaman mengenai:
 
 ---
 
-# 👨‍💻 Pengembang
-
-**Muhammad Al Fauza**
-
-- Universitas Muhammadiyah Riau
-- Program Studi Teknik Informatika
-
-GitHub:
-https://github.com/muhammadalfauza18
-
----
 
 # 📄 Lisensi
 
