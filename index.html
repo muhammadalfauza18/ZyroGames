@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZyroGames</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+
+  <header>
+  <div class="brand">
+    <img src="logo1.png" alt="Zyro Logo">
+    <h1>Zyro</h1>
+  </div>
+
+  <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Cari game..." />
+  </div>
+
+  <nav class="navbar">
+  <ul>
+    <li><a href="#rpg">RPG</a></li>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#horror">Horror</a></li>
+  </ul>
+</nav>
+  <p>Game Unggulan Kami, Mainkan game favorit yang lagi hits! Seru, menantang, dan bikin ketagihan. 
+    Pilih gamemu sekarang dan rasakan keseruannya!</p>
+</header>
+
+
+  <main>
+    <section class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    
+    <!-- RPG -->
+    <div class="swiper-slide featured">
+      <div class="featured-content">
+        <div class="featured-text">
+          <h2>FEATURED & RECOMMENDED</h2>
+          <h3>ELDEN RING</h3>
+          <p> Elden Ring adalah game action RPG open-world yang menantang. Jelajahi dunia gelap The Lands Between, 
+              lawan bos-bos kuat,dan bentuk karaktermu dalam petualangan epik penuh misteri dan strategi.</p>
+        </div>
+        <div class="featured-image">
+          <img src="eldenring1.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- Slide game story -->
+    <div class="swiper-slide featured">
+      <div class="featured-content">
+        <div class="featured-text">
+          <h2>FEATURED & RECOMMENDED</h2>
+          <h3>God of War Ragnarök</h3>
+          <p> God of War Ragnarok adalah game action petualangan yang mengisahkan Kratos dan putranya, 
+              Atreus. Dalam game ini, mereka menghadapi berbagai makhluk mitologi Norse dan berusaha mencegah 
+              kehancuran dunia yang disebut Ragnarok.</p>
+        </div>
+        <div class="featured-image">
+          <img src="godofwar1.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- slide game horror -->
+     <div class="swiper-slide featured">
+      <div class="featured-content">
+        <div class="featured-text">
+          <h2>FEATURED & RECOMMENDED</h2>
+          <h3>The Forest</h3>
+          <p> The Forest adalah game survival horror open-world yang menantang Anda untuk bertahan hidup di pulau misterius setelah kecelakaan pesawat. 
+              Bangun tempat perlindungan, cari sumber daya, dan hadapi ancaman dari makhluk kanibal yang menghuni hutan.</p>
+        </div>
+        <div class="featured-image">
+          <img src="theforest1.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- untuk penggerak featured dan RECOMMENDED -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    effect: "slide",
+  });
+</script>
+
+<!--Produk Game-->
+<section id="rpg" class="product-section top">
+  <h2 class="section-title">🎮 Game RPG</h2>
+    <section class="product-grid">
+      <!-- The Witcher 3 -->
+  <div class="product-card">
+    <img src="the witcher 3.avif">
+    <h2 class="product-name">The Witcher 3: Wild Hunt</h2>
+    <p class="product-description">
+      The Witcher 3: Wild Hunt adalah game action role-playing (RPG) yang dikembangkan oleh CD Projekt Red dan dirilis pada tahun 2015. 
+      Dalam game ini, kamu berperan sebagai Geralt of Rivia, seorang pemburu monster profesional (witcher) yang mencari anak angkatnya, Ciri.
+    </p>
+    <div class="product-price">Rp.225.000</div>
+    <button class="btn-info" onclick="openModal('witcher')">Info Selengkapnya</button>
+    
+  </div>
+
+  <!-- Sekiro -->
+  <div class="product-card">
+    <img src="sekiro.jpg">
+    <h2 class="product-name">Sekiro™: Shadows Die Twice</h2>
+    <p class="product-description">
+      Berlatar di Jepang pada akhir abad ke-16, game ini mengikuti perjalanan seorang shinobi bernama Wolf yang 
+      berusaha menyelamatkan tuannya dan membalas dendam terhadap klan yang menculiknya. Dengan tingkat kesulitan tinggi dan sistem "resurrection" unik, 
+      game ini menawarkan pengalaman menantang dan penuh strategi.
+    </p>
+    <div class="product-price">Rp.450.000</div>
+    <button class="btn-info" onclick="openModal('sekiro')">Info Selengkapnya</button>
+   
+  </div>
+
+  <!-- Elden Ring-->
+  <div class="product-card">
+    <img src="eldenring.jpg">
+    <h2 class="product-name">ELDEN RING</h2>
+    <p class="product-description">
+     Elden Ring adalah game action RPG open-world yang menantang. Jelajahi dunia gelap The Lands Between, lawan bos-bos kuat, 
+     dan bentuk karaktermu dalam petualangan epik penuh misteri dan strategi.Dengan sistem pertarungan khas Souls-like, dunia yang luas, 
+     dan kebebasan eksplorasi tinggi, Elden Ring menawarkan pengalaman menantang, penuh misteri, dan memuaskan bagi para pecinta petualangan dan strategi.
+    </p>
+    <div class="product-price">Rp.650.000</div>
+    <button class="btn-info" onclick="openModal('elden')">Info Selengkapnya</button>
+    </div>
+  </section>
+</section>
+
+<section id="story" class="product-section bottom">
+   <h2 class="section-title">📖 Game Story</h2>
+   <div class="product-grid">
+
+    <!-- Tomb Raider -->
+  <div class="product-card">
+    <img src="tomb raider.jpeg">
+    <h2 class="product-name">Tomb Raider (2013)</h2>
+    <p class="product-description">
+      Tomb Raider (2013), Game ini menceritakan kisah Lara Croft muda dalam petualangan perdananya yang menegangkan 
+      di sebuah pulau misterius bernama Yamatai setelah kapalnya karam.
+    </p>
+    <div class="product-price">Rp.52.000</div>
+    <button class="btn-info" onclick="openModal('tomb2013')">Info Selengkapnya</button>
+    
+  </div>
+
+  <!-- Rise of Tomb Raider -->
+  <div class="product-card">
+    <img src="riseoftomb.jpg">
+    <h2 class="product-name">Rise of the Tomb Raider (2015)</h2>
+    <p class="product-description">
+      Rise of the Tomb Raider adalah kelanjutan dari Tomb Raider (2013), yang rilis pada tahun 2015.
+      Melanjutkan petualangan Lara Croft yang kini lebih berpengalaman, saat ia mengejar rahasia keabadian di kota legendaris Kitezh yang tersembunyi di Siberia.
+    </p>
+    <div class="product-price">Rp.105.000</div>
+    <button class="btn-info" onclick="openModal('tomb2015')">Info Selengkapnya</button>
+    
+  </div>
+
+  <!-- GOW Ragnarok -->
+  <div class="product-card">
+    <img src="godofwar.jpg">
+    <h2 class="product-name">God of War Ragnarök</h2>
+    <p class="product-description">
+      God of War Ragnarok adalah game action petualangan yang mengisahkan Kratos dan putranya, 
+      Atreus. Dalam game ini, mereka menghadapi berbagai makhluk mitologi Norse dan berusaha mencegah 
+      kehancuran dunia yang disebut Ragnarok.
+    </p>
+    <div class="product-price">Rp.250.000</div>
+    <button class="btn-info" onclick="openModal('gow')">Info Selengkapnya</button>
+    
+  </div>
+</div>
+</section>
+
+
+<section id="horror" class="product-section bottom ">
+  <h2 class="section-title">👻 Game Horror</h2>
+<div class="product-grid">
+
+  <!--Repo-->
+ <div class="product-card">
+    <img src="repo.jpeg">
+    <h2 class="product-name">R.E.P.O</h2>
+    <p class="product-description">
+      R.E.P.O game horor kooperatif daring di mana pemain bekerja sama untuk mengumpulkan dan mengirimkan benda berharga ke titik ekstraksi, 
+      sambil menghindari makhluk-makhluk menakutkan. Game ini menekankan komunikasi melalui voice chat, fisika objek, dan humor yang unik, 
+      membuatnya menjadi pengalaman horor yang unik dan menyenangkan. 
+    </p>
+    <div class="product-price">Rp.90.000</div>
+    <button class="btn-info" onclick="openModal('repo')">Info Selengkapnya</button>
+    
+  </div>
+
+  <!--The forest-->
+  <div class="product-card">
+    <img src="TheForest.webp">
+    <h2 class="product-name">The Forest</h2>
+    <p class="product-description">
+      The Forest adalah game survival horror open-world yang menantang Anda untuk bertahan hidup di pulau misterius setelah kecelakaan pesawat. 
+      Bangun tempat perlindungan, cari sumber daya, dan hadapi ancaman dari makhluk kanibal yang menghuni hutan. Dengan gameplay mendalam dan atmosfer mencekam, 
+      The Forest menghadirkan pengalaman bertahan hidup yang intens dan imersif.
+    </p>
+    <div class="product-price">Rp.120.000</div>
+    <button class="btn-info" onclick="openModal('forest')">Info Selengkapnya</button>
+    
+  </div>
+
+  <!--phasmophobia-->
+  <div class="product-card">
+    <img src="phasno.webp">
+    <h2 class="product-name">PHASMOPHOBIA</h2>
+    <p class="product-description">
+      Phasmophobia adalah game horor dimana para pemain menyelidiki lokasi berhantu untuk mengumpulkan bukti aktivitas paranormal. 
+      Pemain menggunakan berbagai alat seperti EMF reader, kamera, dan alat perekam suara untuk mendeteksi dan
+      mengidentifikasi jenis hantu yang menghantui area tersebut.
+    </p>
+    <div class="product-price">Rp.250.000</div>
+    <button class="btn-info" onclick="openModal('phasmo')">Info Selengkapnya</button>
+    
+  </div>
+</div>
+</section>
+
+<!-- Modal Spesifikasi -->
+<div class="modal" id="modal-witcher">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('witcher')">&times;</span>
+    <h2>The Witcher 3: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i5 Gen 11</li>
+      <li>RAM: 8 GB</li>
+      <li>Storage: 45 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.225.000</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-sekiro">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('sekiro')">&times;</span>
+    <h2>Sekiro: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i5 Gen 12</li>
+      <li>RAM: 16 GB</li>
+      <li>Storage: 150 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.450.000</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-elden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('elden')">&times;</span>
+    <h2>Elden Ring: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i5 Gen 12</li>
+      <li>RAM: 16 GB</li>
+      <li>Storage: 120 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.650.000</button>
+    </div>
+  </div>
+</div>
+<!-- MODAL SPESIFIKASI STORY GAMES -->
+<div class="modal" id="modal-tomb2013">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('tomb2013')">&times;</span>
+    <h2>Tomb Raider (2013): Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i3 Gen 9</li>
+      <li>RAM: 6 GB</li>
+      <li>Storage: 20 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.52.000</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-tomb2015">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('tomb2015')">&times;</span>
+    <h2>Rise of the Tomb Raider: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i5 Gen 10</li>
+      <li>RAM: 6 GB</li>
+      <li>Storage: 25 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.105.000</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-gow">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('gow')">&times;</span>
+    <h2>God of War Ragnarök: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i7 Gen 11</li>
+      <li>RAM: 16 GB</li>
+      <li>Storage: 80 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.250.000</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SPESIFIKASI HORROR GAMES -->
+<div class="modal" id="modal-repo">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('repo')">&times;</span>
+    <h2>R.E.P.O: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i3</li>
+      <li>RAM: 4 GB</li>
+      <li>Storage: 12 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.90.000</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-forest">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('forest')">&times;</span>
+    <h2>The Forest: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i5 Gen 9</li>
+      <li>RAM: 8 GB</li>
+      <li>Storage: 5 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.120.000</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-phasmo">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('phasmo')">&times;</span>
+    <h2>Phasmophobia: Spesifikasi Minimum</h2>
+    <ul>
+      <li>Processor: Intel Core i5 Gen 6</li>
+      <li>RAM: 4 GB</li>
+      <li>Storage: 2 GB</li>
+    </ul>
+    <hr>
+    <h3>Opsi Pembayaran</h3>
+    <ul>
+      <li>Dana</li>
+      <li>ShopeePay</li>
+      <li>Transfer Bank</li>
+    </ul>
+    <div class="modal-buy">
+      <button class="btn-buy-modal">Buy - Rp.250.000</button>
+    </div>
+  </div>
+</div>
+
+<section id="customer-service" class="customer-service-section">
+  <h2>🛎️ Customer Service</h2>
+  <p>Jika kamu memiliki pertanyaan atau butuh bantuan, silakan hubungi kami melalui formulir berikut:</p>
+
+  <form class="cs-form">
+    <input type="text" placeholder="Nama Anda" required>
+    <input type="email" placeholder="Email Anda" required>
+    <textarea rows="5" placeholder="Pesan Anda..." required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+  <p>Atau hubungi kami langsung: <br>
+ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mhdfauza.01@gmail.com">support@ZyroGames.com</a> |  <a href="https://wa.me/6287831146474">WhatsApp</a></p>
+</section>
+
+
+<script src="search.js"></script>
+   </main>
+   <footer>
+    © 2025 ZyroGames. All rights reserved.
+  </footer>
+</body>
+</html>
